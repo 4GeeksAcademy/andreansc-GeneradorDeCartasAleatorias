@@ -1,5 +1,46 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: green;
+    margin: 0;
+  }
+
+  .carta {
+    width: 400px;
+    height: 600px;
+    
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    font-family: 'Georgia', serif;
+  }
+
+  .esquina {
+    position: absolute;
+    font-size: 130px;
+    line-height: .6;
+  }
+
+  .top-left {
+    top: 10px;
+    left: 10px;
+  }
+
+  .bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+  }
+
+  .centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+  }
